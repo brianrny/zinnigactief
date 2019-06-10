@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}User{% endblock %}
+
+{% block body %}
+    <div class="event-container col-12 col-lg-3">
+        <p class="ml-5 event-about-title">Over {{ user.username }}</p>
+        <div class="event-wrapper">
+            <div class="pt-2">
+                <div class="d-flex justify-content-center text-center">
+                    <img class="event-about-img"
+                         src="{{ asset("images/dark-diving-eerie-2289407.jpg") }}" alt="x">
+                    <div class="bg-white event-description text-left p-3">
+                        <a class="event-map-icon" href="{{ path("user_map", {'id': user.id}) }}">
+                            <img src="{{ asset("mbo-icons/send.svg") }}">
+                        </a>
+                        <h2 class="bold text-purple">Derde Donderdag in September</h2>
+                        <p class="text-purple mt-3">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores debitis delectus ipsum
+                            laboriosam laborum modi perspiciatis quo. Architecto at dicta dolorum, eius eveniet facilis.
+                            Adipisci asperiores hic rem voluptate! Dolor enim ipsa magni quae quidem? </p>
+                    </div>
+                    <div class="event-footer mb-2">
+                        <img class="float-left pt-3 pl-3" src="{{ asset("mbo-icons/heart.svg") }}">
+                        <p class="text-dark float-left pt-3 pl-2">{{ user.id }} likes</p>
+                        <p class="text-dark float-right pt-3 pr-3"
+                           style="color: #3A0F49">{{ user.lastLogin ? user.lastLogin|date("Y-m-d") : '' }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

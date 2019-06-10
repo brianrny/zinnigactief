@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+
+    <style>
+
+    </style>
+    {% block stylesheet %}{% endblock %}
+    <link rel="stylesheet" href="{{ asset("css/styles.css") }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<header class="d-flex justify-content-center">
+    <nav class="navbar navbar-dark col-12 col-lg-3">
+        <a class="navbar-brand ml-5" href="{{ path('index') }}"><img src="{{ asset("images/MBORijnlandlogo.png") }}"
+                                                                     alt=""></a>
+        <button class="navbar-toggler mr-5" type="button" data-toggle="collapse" data-target="#collapse_menu"
+                aria-controls="collapse_menu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapse_menu"
+             style="width: 75%; margin-left: auto; margin-right: auto;">
+            <ul class="navbar-nav mr-auto d-flex justify-content-center text-center">
+                {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                    {% if is_granted("ROLE_ADMIN") %}
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="{{ path("fos_user_profile_show") }}">Manage Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="#">Manage Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="#">Profile</a>
+                        </li>
+                    {% elseif is_granted("ROLE_EVENT") %}
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="#">Manage Events</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="{{ path("fos_user_profile_show") }}">Profile</a>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="{{ path("fos_user_profile_show") }}">Profile</a>
+                        </li>
+                    {% endif %}
+                {% endif %}
+            </ul>
+            {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                <p class="text-center col-12 mb-1">{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</p>
+                <a href="{{ path('fos_user_security_logout') }}" class="btn btn-primary col-12 mb-1">
+                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                </a>
+            {% else %}
+                <a href="{{ path('fos_user_security_login') }}" class="btn btn-primary col-12 mb-1">
+                    {{ 'layout.login'|trans({}, 'FOSUserBundle') }}
+                </a>
+                <a href="{{ path('fos_user_registration_register') }}" class="btn btn-primary col-12 mb-1">
+                    {{ 'layout.register'|trans({}, 'FOSUserBundle') }}
+                </a>
+            {% endif %}
+
+        </div>
+    </nav>
+</header>
+{% block body %}{% endblock %}
+{% block javascripts %}{% endblock %}
+{% block fos_user_content %}{% endblock %}
+<footer class="d-flex justify-content-center">
+    <nav class="navbar fixed-bottom navbar-expand">
+        <div class="container-fluid col-12 col-lg-3">
+            <ul class="navbar-nav col-12">
+                <li class="nav-item col-4">
+                    <a class="nav-link bold text-center" href="{{ path("index") }}">
+                        <span><img src="{{ asset("mbo-icons/home.svg") }}" class="bottom-footer-icons" alt="x"></span>
+                        <p class="pt-2">HOME</p>
+                    </a>
+                </li>
+                <li class="nav-item col-4">
+                    <a class="nav-link bold text-center" href="#">
+                    <span><img src="{{ asset("mbo-icons/calendar.svg") }}" class="bottom-footer-icons"
+                               alt="x"></span>
+                        <p class="pt-2">EVENTS</p></a>
+                </li>
+                <li class="nav-item col-4">
+                    <a class="nav-link bold text-center" href="#">
+                    <span><img src="{{ asset("mbo-icons/map-pin.svg") }}" class="bottom-footer-icons"
+                               alt="x"></span>
+                        <p class="pt-2">MAP</p></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+<script async src="https://unpkg.com/feather-icons"></script>
+<script async src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

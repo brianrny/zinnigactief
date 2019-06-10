@@ -1,0 +1,169 @@
+@font-face {
+    font-family: mborijnland;
+    src: url("../fonts/Galano_Grotesque.woff");
+}
+
+* {
+    font-family: mborijnland;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(#3A0F49, #E54160);
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+span img {
+    color: white;
+}
+
+.text-purple{
+    color: #3A0F49;
+}
+
+.event-container {
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+
+.event-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+}
+
+.event-title {
+    position: absolute;
+    top: 10%;
+    margin: 0 auto;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.26);
+}
+
+.event-route-title{
+    position: absolute;
+    top: 5%;
+    margin: 0 auto;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.26);
+}
+
+.event-about-title{
+    display: inline-block;
+    position: relative;
+    font-weight: bold;
+}
+
+.event-about-title:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    display: inline-block;
+    height: 1.5em;
+    width: 100%;
+    border-bottom: 2px solid;
+    margin-top: 5px;
+}
+
+.event-more {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(rgba(58, 15, 73, 0.8), rgba(229, 65, 96, 0.8));
+    width: 30%;
+    height: 5%;
+    transform: translateX(120%);
+    font-size: 0.9em;
+}
+
+.event-description {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    width: 80%;
+    height: 60%;
+    color: #3A0F49;
+}
+
+.event-map{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    width: 80%;
+    height: 60%;
+    color: #3A0F49;
+}
+
+.event-route{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    width: 80%;
+    height: 75%;
+    color: #3A0F49;
+}
+
+.event-footer {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    width: 80%;
+    height: 8%;
+}
+
+.event-discover-img {
+    width: 80%;
+    height: 75vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-about-img {
+    width: 80%;
+    height: 67.5vh;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-map-icon{
+    border-radius: 100%;
+    background-image: linear-gradient(rgba(58, 15, 73), rgba(229, 65, 96));
+    padding: 3%;
+    position: absolute;
+    top: -7%;
+    left: 80%;
+}
+
+.event-map-icon img{
+    width: 3vh;
+    height: 3vh;
+}
+
+.bottom-footer-icons {
+    transform: scale(1.5);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#collapse_menu {
+    position: absolute;
+    top: 7.5vh;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #3A0F49;
+}
+
+.btn, .btn-primary {
+    background-image: linear-gradient(rgba(58, 15, 73, 0.8), rgba(229, 65, 96, 0.8));
+    border: none !important;
+}
