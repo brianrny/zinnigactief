@@ -3,40 +3,29 @@
 {% block title %}Activity{% endblock %}
 
 {% block body %}
-    <h1>Activity</h1>
-
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ activity.id }}</td>
-            </tr>
-            <tr>
-                <th>Name</th>
-                <td>{{ activity.name }}</td>
-            </tr>
-            <tr>
-                <th>File</th>
-                <td>{{ activity.file }}</td>
-            </tr>
-            <tr>
-                <th>File_name</th>
-                <td>{{ activity.fileName }}</td>
-            </tr>
-            <tr>
-                <th>Max_people</th>
-                <td>{{ activity.maxPeople }}</td>
-            </tr>
-            <tr>
-                <th>Description</th>
-                <td>{{ activity.description }}</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <a href="{{ path('activity_index') }}">back to list</a>
-
-    <a href="{{ path('activity_edit', {'id': activity.id}) }}">edit</a>
-
-    {{ include('activity/_delete_form.html.twig') }}
+    <div class="event-container col-12 col-lg-3">
+        <p class="ml-5 event-about-title">Over {{ activity.name }}</p>
+        <div class="event-wrapper">
+            <div class="pt-2">
+                <div class="d-flex justify-content-center text-center">
+                    <img class="event-about-img"
+                         src="{{ vich_uploader_asset(activity, "file") }}" alt="x">
+                    <div class="bg-white event-description text-left p-3">
+                        <a class="event-map-icon" href="{{ path("activity_map", {'id': activity.id}) }}">
+                            <img src="{{ asset("mbo-icons/send.svg") }}">
+                        </a>
+                        <h2 class="bold text-purple">{{ activity.name }}</h2>
+                        <p class="text-purple mt-3">
+                            {{ activity.description }} </p>
+                    </div>
+                    <div class="event-footer mb-2">
+                        <img class="float-left pt-3 pl-3" src="{{ asset("mbo-icons/heart.svg") }}">
+                        <p class="text-dark float-left pt-3 pl-2">{{ activity.id }} likes</p>
+                        <p class="text-dark float-right pt-3 pr-3"
+                           style="color: #3A0F49">{{ activity.maxPeople }} Max.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

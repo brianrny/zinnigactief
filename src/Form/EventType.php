@@ -3,7 +3,6 @@
 namespace App\Form;
 
 use App\Entity\Event;
-use Faker\Provider\DateTime;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateTimeType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -17,8 +16,6 @@ class EventType extends AbstractType
         $builder
             ->add('name')
             ->add('file', VichImageType::class)
-            ->add('fileName')
-            ->add('fileSize')
             ->add('start_date', DateTimeType::class, [
                 "date_widget" => "single_text",
                 "time_widget" => "single_text"
