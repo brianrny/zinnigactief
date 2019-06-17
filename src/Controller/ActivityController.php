@@ -81,6 +81,26 @@ class ActivityController extends AbstractController
     }
 
     /**
+     * @Route("/{id}/map", name="activity_map", methods={"GET"})
+     */
+    public function map(Activity $activity): Response
+    {
+        return $this->render('activity/map.html.twig', [
+            'activity' => $activity,
+        ]);
+    }
+
+    /**
+     * @Route("/{id}/route", name="activity_route", methods={"GET"})
+     */
+    public function route(Activity $activity): Response
+    {
+        return $this->render('activity/route.html.twig', [
+            'activity' => $activity,
+        ]);
+    }
+
+    /**
      * @Route("/{id}", name="activity_delete", methods={"DELETE"})
      */
     public function delete(Request $request, Activity $activity): Response
