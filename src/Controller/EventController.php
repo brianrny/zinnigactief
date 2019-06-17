@@ -48,6 +48,7 @@ class EventController extends AbstractController
         ]);
     }
 
+
     /**
      * @Route("/{id}", name="event_show", methods={"GET"})
      */
@@ -77,6 +78,26 @@ class EventController extends AbstractController
         return $this->render('event/edit.html.twig', [
             'event' => $event,
             'form' => $form->createView(),
+        ]);
+    }
+
+    /**
+     * @Route("/{id}/map", name="event_map", methods={"GET"})
+     */
+    public function map(Event $event): Response
+    {
+        return $this->render('event/map.html.twig', [
+            'event' => $event,
+        ]);
+    }
+
+    /**
+     * @Route("/{id}/route", name="event_route", methods={"GET"})
+     */
+    public function route(Event $event): Response
+    {
+        return $this->render('event/route.html.twig', [
+            'event' => $event,
         ]);
     }
 

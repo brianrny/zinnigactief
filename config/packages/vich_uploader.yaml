@@ -1,0 +1,7 @@
+vich_uploader:
+    db_driver: orm
+
+    mappings:
+        event:
+            uri_prefix: /images/event
+            upload_destination: '%kernel.project_dir%/public/images/event'
