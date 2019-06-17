@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Attend{% endblock %}
+
+{% block body %}
+    <h1>Create new Attend</h1>
+
+    {{ include('attend/_form.html.twig') }}
+
+    <a href="{{ path('attend_index') }}">back to list</a>
+{% endblock %}
