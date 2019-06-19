@@ -31,7 +31,9 @@
     <script type="text/javascript" src="{{ asset("js/swiper.js") }}"></script>
 
     <script>
-        var swiper = new Swiper('.event-container');
+        new Swiper('.event-container', {
+            loop: true
+        });
     </script>
 
 {% endblock %}
