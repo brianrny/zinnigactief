@@ -57,24 +57,6 @@
                         </li>
                     {% endif %}
                 {% endif %}
-<<<<<<< HEAD
-            </ul>
-            {% if is_granted("IS_AUTHENTICATED_FULLY") %}
-                <p class="text-center col-12 mb-1">{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</p>
-                <a href="{{ path('fos_user_security_logout') }}" class="btn btn-primary col-12 mb-1">
-                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
-                </a>
-            {% else %}
-                <a href="{{ path('fos_user_security_login') }}" class="btn btn-primary col-12 mb-1">
-                    {{ 'layout.login'|trans({}, 'FOSUserBundle') }}
-                </a>
-                <a href="{{ path('fos_user_registration_register') }}" class="btn btn-primary col-12 mb-1">
-                    {{ 'layout.register'|trans({}, 'FOSUserBundle') }}
-                </a>
-            {% endif %}
-
-=======
-
             {% if is_granted("IS_AUTHENTICATED_FULLY") %}
                 <p class="text-center col-12 mb-1">{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</p>
                 <li class="nav-item">
@@ -92,7 +74,6 @@
                 </a>
             {% endif %}
             </ul>
->>>>>>> e560f1ff64b37c116dc9e719254ca834b7bcc610
         </div>
     </nav>
 </header>
