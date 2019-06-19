@@ -1,11 +1,24 @@
 {% trans_default_domain 'FOSUserBundle' %}
 
-<form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
-    <div>
-        <label for="username">{{ 'resetting.request.username'|trans }}</label>
-        <input type="text" id="username" name="username" required="required" />
-    </div>
-    <div>
-        <input type="submit" value="{{ 'resetting.request.submit'|trans }}" />
-    </div>
-</form>
+<div class="d-flex justify-content-center mt-5">
+    <aside class="col-sm-4">
+        <div class="card">
+            <article class="card-body text-dark">
+                <h4 class="card-title mb-4 mt-1 text-dark">Nieuw wachtwoord aanmaken</h4>
+                    <form action="{{ path('fos_user_resetting_send_email') }}" method="POST" class="fos_user_resetting_request">
+                        <div>
+                            <div class="form-group">
+                                <label for="username">Gebruikersnaam of E-mailadres</label>
+                                <br/>
+                                <input type="text" class="form-control" id="username" name="username" required="required" />
+                            </div>
+                        </div>
+                        <div>
+                            <input type="submit" value="{{ 'resetting.request.submit'|trans }}" class="btn btn-primary btn-block" />
+                        </div>
+                    </form>
+            </article>
+        </div>
+    </aside>
+</div>
+

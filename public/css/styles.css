@@ -134,7 +134,7 @@ span img {
 
 .event-map-icon{
     border-radius: 100%;
-    background-image: linear-gradient(rgba(58, 15, 73), rgba(229, 65, 96));
+    background-image: linear-gradient(rgb(58, 15, 73), rgb(229, 65, 96));
     padding: 3%;
     position: absolute;
     top: -7%;
@@ -156,7 +156,7 @@ span img {
 
 #collapse_menu {
     position: absolute;
-    top: 7.5vh;
+    top: 7.68vh;
     left: 0;
     right: 0;
     z-index: 9999;
@@ -232,3 +232,4 @@ span img {
 label {
     color: #000;
 }
+
