@@ -9,3 +9,4 @@ vich_uploader:
         activity:
             uri_prefix: /images/activity
             upload_destination: '%kernel.project_dir%/public/images/activity'
+
