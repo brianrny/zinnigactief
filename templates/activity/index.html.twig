@@ -1,43 +1,37 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Activity index{% endblock %}
+{% block title %}Activity{% endblock %}
 
 {% block body %}
-    <h1>Activity index</h1>
+    <link rel="stylesheet" href="{{ asset("css/swiper.css") }}">
 
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>File</th>
-                <th>File_name</th>
-                <th>Max_people</th>
-                <th>Description</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for activity in activities %}
-            <tr>
-                <td>{{ activity.id }}</td>
-                <td>{{ activity.name }}</td>
-                <td>{{ activity.file }}</td>
-                <td>{{ activity.fileName }}</td>
-                <td>{{ activity.maxPeople }}</td>
-                <td>{{ activity.description }}</td>
-                <td>
-                    <a href="{{ path('activity_show', {'id': activity.id}) }}">show</a>
-                    <a href="{{ path('activity_edit', {'id': activity.id}) }}">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan="7">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+    <div class="event-container swiper-container-initialized swiper-container-horizontal col-12 col-lg-3">
+        <div class="swiper-wrapper">
+            {% for activity in activities  %}
+                <div class="swiper-slide pt-4">
+                    <div class="d-flex justify-content-center text-center">
+                        <h3 class="text-white event-title bold">{{ activity.name }}</h3>
+                        <a href="{{ path('activity_show', {'id': activity.id}) }}" class="text-white event-more"><p
+                                    class="pt-1 bold">Bekijk workshop</p></a>
+                        <img class="event-discover-img"
+                             src="{{ vich_uploader_asset(activity, 'file') }}" alt="x">
+                        <div class="bg-white event-footer">
+                            <img class="float-left pt-3 pl-3" src="{{ asset("mbo-icons/heart.svg") }}">
+                            <p class="text-dark float-left pt-3 pl-2">{{ activity.id }} likes</p>
+                            {#<p class="text-dark float-right pt-3 pr-3">{{ activity.startDate ? activity.startDate|date("Y-m-d") : '' }}</p>#}
+                        </div>
+                    </div>
+                </div>
+            {% else %}
+                <h1>Add more activities</h1>
+            {% endfor %}
+        </div>
+    </div>
 
-    <a href="{{ path('activity_new') }}">Create new</a>
+    <script type="text/javascript" src="{{ asset("js/swiper.js") }}"></script>
+
+    <script>
+        var swiper = new Swiper('.event-container');
+    </script>
+
 {% endblock %}
