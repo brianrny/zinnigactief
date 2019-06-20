@@ -1,5 +1,3 @@
-# Zinnigactief
+# zinnigactief
 
-#### - Vichuploader geimplementeerd
-#### - Homepagina toont nu events inplaats van users
-#### - Events die worden aangemaakt vereist nu een afbeelding en die wordt opgeslagen in public/images/events
+Figma Link: https://www.figma.com/file/cFgHAfz4LqMY7RZwPjA0bppt/Untitled?node-id=136%3A237
