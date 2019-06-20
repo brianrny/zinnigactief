@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0fc8d21f-89c4-47b7-bf34-71869f2f1e92" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
@@ -27,6 +29,7 @@
       <change beforePath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/fos_ckeditor.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/fos_ckeditor.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/fos_user.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/fos_user.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/framework.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
@@ -55,12 +58,301 @@
       <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/swiper.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/swiper.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/swiper.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/swiper.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/fonts/Galano_Grotesque.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/fonts/Galano_Grotesque.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/4k-wallpaper-clouds-cloudy-1668246.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/4k-wallpaper-clouds-cloudy-1668246.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/MBORijnlandlogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/MBORijnlandlogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/dark-diving-eerie-2289407.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/dark-diving-eerie-2289407.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/event/Blank ERD.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/event/Blank ERD.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/event/people-woman-coffee-meeting.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/event/people-woman-coffee-meeting.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/event/pexels-photo-2419865.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/event/pexels-photo-2419865.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/event/pexels-photo-2433861.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/event/pexels-photo-2433861.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/swiper.esm.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/swiper.esm.bundle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/swiper.esm.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/swiper.esm.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/swiper.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/swiper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/swiper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/swiper.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/swiper.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/swiper.min.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/activity.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/activity.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/airplay.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/airplay.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/alert-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/alert-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/alert-octagon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/alert-octagon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/alert-triangle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/alert-triangle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/align-center.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/align-center.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/align-justify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/align-justify.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/align-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/align-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/align-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/align-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/anchor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/anchor.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/aperture.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/aperture.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/archive.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/archive.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-down-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-down-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-down-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-down-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-down-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-down-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-left-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-left-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-right-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-right-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-up-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-up-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-up-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-up-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-up-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-up-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/arrow-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/arrow-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/at-sign.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/at-sign.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/award.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/award.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/bar-chart-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/bar-chart-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/bar-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/bar-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/battery-charging.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/battery-charging.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/battery.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/battery.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/bell-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/bell-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/bell.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/bell.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/bluetooth.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/bluetooth.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/bold.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/bold.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/book-open.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/book-open.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/book.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/book.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/bookmark.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/bookmark.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/box.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/box.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/briefcase.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/briefcase.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/calendar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/calendar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/camera-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/camera-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/camera.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/camera.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/cast.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/cast.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/check-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/check-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/check-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/check-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/check.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/chevron-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/chevron-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/chevron-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/chevron-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/chevron-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/chevron-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/chevron-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/chevron-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/chevrons-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/chevrons-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/chevrons-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/chevrons-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/chevrons-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/chevrons-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/chevrons-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/chevrons-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/chrome.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/chrome.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/clipboard.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/clipboard.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/clock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/clock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/cloud-drizzle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/cloud-drizzle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/cloud-lightning.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/cloud-lightning.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/cloud-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/cloud-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/cloud-rain.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/cloud-rain.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/cloud-snow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/cloud-snow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/cloud.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/cloud.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/code.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/code.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/codepen.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/codepen.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/codesandbox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/codesandbox.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/coffee.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/coffee.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/columns.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/columns.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/command.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/command.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/compass.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/compass.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/copy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/copy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/corner-down-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/corner-down-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/corner-down-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/corner-down-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/corner-left-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/corner-left-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/corner-left-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/corner-left-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/corner-right-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/corner-right-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/corner-right-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/corner-right-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/corner-up-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/corner-up-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/corner-up-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/corner-up-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/cpu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/cpu.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/credit-card.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/credit-card.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/crop.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/crop.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/crosshair.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/crosshair.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/database.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/database.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/delete.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/delete.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/disc.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/disc.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/dollar-sign.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/dollar-sign.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/download-cloud.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/download-cloud.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/download.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/download.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/droplet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/droplet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/edit-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/edit-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/edit-3.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/edit-3.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/edit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/edit.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/external-link.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/external-link.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/eye-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/eye-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/eye.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/eye.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/facebook.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/facebook.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/fast-forward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/fast-forward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/feather.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/feather.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/figma.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/figma.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/file-minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/file-minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/file-plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/file-plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/file-text.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/file-text.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/file.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/file.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/film.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/film.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/filter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/filter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/flag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/flag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/folder-minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/folder-minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/folder-plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/folder-plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/folder.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/folder.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/frown.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/frown.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/gift.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/gift.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/git-branch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/git-branch.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/git-commit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/git-commit.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/git-merge.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/git-merge.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/git-pull-request.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/git-pull-request.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/github.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/github.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/gitlab.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/gitlab.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/globe.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/globe.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/grid.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/grid.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/hard-drive.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/hard-drive.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/hash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/hash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/headphones.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/headphones.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/heart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/heart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/help-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/help-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/hexagon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/hexagon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/home.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/home.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/image.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/image.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/inbox.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/inbox.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/info.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/info.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/instagram.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/instagram.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/italic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/italic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/key.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/key.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/layers.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/layers.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/layout.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/layout.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/life-buoy.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/life-buoy.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/link-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/link-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/link.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/link.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/linkedin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/linkedin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/list.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/list.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/loader.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/loader.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/lock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/lock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/log-in.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/log-in.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/log-out.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/log-out.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/mail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/mail.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/map-pin.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/map-pin.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/map.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/map.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/maximize-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/maximize-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/maximize.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/maximize.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/meh.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/meh.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/menu.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/menu.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/message-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/message-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/message-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/message-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/mic-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/mic-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/mic.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/mic.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/minimize-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/minimize-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/minimize.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/minimize.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/minus-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/minus-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/minus-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/minus-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/monitor.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/monitor.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/moon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/moon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/more-horizontal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/more-horizontal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/more-vertical.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/more-vertical.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/mouse-pointer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/mouse-pointer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/move.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/move.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/music.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/music.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/navigation-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/navigation-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/navigation.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/navigation.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/octagon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/octagon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/package.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/package.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/paperclip.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/paperclip.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/pause-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/pause-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/pause.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/pause.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/pen-tool.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/pen-tool.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/percent.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/percent.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/phone-call.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/phone-call.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/phone-forwarded.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/phone-forwarded.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/phone-incoming.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/phone-incoming.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/phone-missed.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/phone-missed.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/phone-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/phone-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/phone-outgoing.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/phone-outgoing.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/phone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/pie-chart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/pie-chart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/play-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/play-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/play.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/plus-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/plus-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/plus-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/plus-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/pocket.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/pocket.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/power.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/power.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/printer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/printer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/radio.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/radio.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/refresh-ccw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/refresh-ccw.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/refresh-cw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/refresh-cw.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/repeat.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/repeat.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/rewind.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/rewind.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/rotate-ccw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/rotate-ccw.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/rotate-cw.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/rotate-cw.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/rss.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/rss.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/save.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/save.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/scissors.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/scissors.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/search.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/search.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/send.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/send.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/server.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/server.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/settings.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/settings.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/share-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/share-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/share.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/shield-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/shield-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/shield.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/shield.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/shopping-bag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/shopping-bag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/shopping-cart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/shopping-cart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/shuffle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/shuffle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/sidebar.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/sidebar.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/skip-back.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/skip-back.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/skip-forward.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/skip-forward.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/slack.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/slack.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/slash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/slash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/sliders.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/sliders.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/smartphone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/smartphone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/smile.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/smile.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/speaker.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/speaker.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/star.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/star.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/stop-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/stop-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/sun.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/sun.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/sunrise.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/sunrise.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/sunset.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/sunset.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/tablet.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/tablet.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/tag.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/tag.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/target.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/target.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/terminal.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/terminal.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/thermometer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/thermometer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/thumbs-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/thumbs-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/thumbs-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/thumbs-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/toggle-left.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/toggle-left.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/toggle-right.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/toggle-right.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/trash-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/trash-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/trash.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/trash.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/trello.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/trello.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/trending-down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/trending-down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/trending-up.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/trending-up.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/triangle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/triangle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/truck.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/truck.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/tv.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/tv.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/twitter.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/twitter.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/type.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/type.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/umbrella.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/umbrella.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/underline.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/underline.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/unlock.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/unlock.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/upload-cloud.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/upload-cloud.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/upload.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/upload.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/user-check.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/user-check.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/user-minus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/user-minus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/user-plus.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/user-plus.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/user-x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/user-x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/user.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/user.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/users.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/users.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/video-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/video-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/video.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/video.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/voicemail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/voicemail.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/volume-1.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/volume-1.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/volume-2.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/volume-2.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/volume-x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/volume-x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/volume.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/volume.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mbo-icons/walk.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/walk.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/watch.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/watch.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/wifi-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/wifi-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/wifi.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/wifi.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/wind.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/wind.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/x-circle.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/x-circle.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/x-octagon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/x-octagon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/x-square.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/x-square.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/x.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/x.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/youtube.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/youtube.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/zap-off.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/zap-off.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/zap.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/zap.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/zoom-in.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/zoom-in.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mbo-icons/zoom-out.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/mbo-icons/zoom-out.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/ActivityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ActivityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/AttendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AttendController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/EventController.php" afterDir="false" />
@@ -69,6 +361,7 @@
       <change beforePath="$PROJECT_DIR$/src/Controller/PeriodController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PeriodController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PlaceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PlaceController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Activity.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Activity.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Attend.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Attend.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Event.php" afterDir="false" />
@@ -87,7 +380,9 @@
       <change beforePath="$PROJECT_DIR$/src/Form/PlaceType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/PlaceType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Form/UserType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/UserType.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Migrations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Migrations/Version20190608154107.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Migrations/Version20190608154107.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/ActivityRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/ActivityRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/AttendRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/AttendRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/EventHasActivityRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/EventHasActivityRepository.php" afterDir="false" />
@@ -100,7 +395,9 @@
       <change beforePath="$PROJECT_DIR$/templates/activity/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/activity/_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/activity/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/activity/edit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/activity/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/activity/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/activity/map.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/activity/map.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/activity/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/activity/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/activity/route.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/activity/route.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/activity/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/activity/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/attend/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/attend/_delete_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/attend/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/attend/_form.html.twig" afterDir="false" />
@@ -141,7 +438,9 @@
       <change beforePath="$PROJECT_DIR$/templates/event/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/event/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/edit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/event/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/event/map.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/map.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/event/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/event/route.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/route.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/event/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/event_has_activity/_delete_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event_has_activity/_delete_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/event_has_activity/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/event_has_activity/_form.html.twig" afterDir="false" />
@@ -171,10 +470,10 @@
       <change beforePath="$PROJECT_DIR$/templates/user/_form.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/_form.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/map.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/user/route.html.twig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/tests/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/translations/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,145 +483,26 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="1105596699">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="5" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.14" value="1" />
-          <entry key="project.open.time.16" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.23" value="1" />
-          <entry key="project.open.time.32" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="7" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="6" />
-          <entry key="gitignore" value="1" />
-          <entry key="jpg" value="1" />
-          <entry key="php" value="17" />
-          <entry key="png" value="1" />
-          <entry key="svg" value="9" />
-          <entry key="twig" value="25" />
-          <entry key="yaml" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="6" />
-          <entry key="Image" value="2" />
-          <entry key="PHP" value="17" />
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="SVG" value="9" />
-          <entry key="Twig" value="25" />
-          <entry key="YAML" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="1427" />
-          <entry key="php" value="277" />
-          <entry key="svg" value="48" />
-          <entry key="twig" value="3221" />
-          <entry key="yaml" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="1427" />
-          <entry key="PHP" value="277" />
-          <entry key="SVG" value="48" />
-          <entry key="Twig" value="3221" />
-          <entry key="YAML" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.new.class">
-        <counts>
-          <entry key="PHP Class.type" value="1" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="1541669473">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="php" value="14" />
-          <entry key="twig" value="9" />
-          <entry key="yaml" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="PHP" value="14" />
-          <entry key="Twig" value="9" />
-          <entry key="YAML" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="php" value="164" />
-          <entry key="twig" value="504" />
-          <entry key="yaml" value="126" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="PHP" value="164" />
-          <entry key="Twig" value="504" />
-          <entry key="YAML" value="126" />
-        </counts>
-      </usages-collector>
-    </session>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="74" selection-start-line="13" selection-start-column="74" selection-end-line="13" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Form/ActivityType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
-              <folding>
-                <element signature="e#28#52#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/activity/index.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="106" selection-start-line="7" selection-start-column="106" selection-end-line="7" selection-end-column="106" />
+            <state relative-caret-position="390">
+              <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/routes.yaml">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ActivityController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="330">
+              <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -382,20 +562,9 @@
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/ActivityType.php" />
         <option value="$PROJECT_DIR$/templates/activity/index.html.twig" />
+        <option value="$PROJECT_DIR$/.env" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/public/bundles/fosckeditor/package.json" />
-      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/ckeditor-bundle/src/Resources/public/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpServers">
     <servers />
@@ -519,82 +688,37 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
+              <item name="yourevent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="$PROJECT_DIR$" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="yourevent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="$PROJECT_DIR$" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="activity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="event" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="yourevents" type="b2602c69:ProjectViewProjectNode" />
-              <item name="yourevents" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="yourevent" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="$PROJECT_DIR$" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="src" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="Controller" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -641,12 +765,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36337000" />
+    <option name="totallyTimeSpent" value="36798000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="4" y="0" width="1912" height="1046" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -659,7 +784,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3259177" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18510158" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -691,13 +816,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/mbo-icons/map-pin.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/Middel_3.png" />
     <entry file="file://$PROJECT_DIR$/public/images/dark-diving-eerie-2289407.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -781,13 +900,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/map.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="408" selection-start-line="16" selection-start-column="408" selection-end-line="16" selection-end-column="408" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/map.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/Controller/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
@@ -809,13 +922,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/user/route.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="121" selection-start-line="19" selection-start-column="121" selection-end-line="19" selection-end-column="121" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/route.html.twig" />
     <entry file="file://$PROJECT_DIR$/src/Entity/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -862,13 +969,6 @@
     <entry file="file://$PROJECT_DIR$/src/Controller/AttendController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ActivityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="83" column="64" lean-forward="true" selection-start-line="83" selection-start-column="64" selection-end-line="83" selection-end-column="64" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/event/index.html.twig">
@@ -972,6 +1072,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ActivityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
         </state>
       </provider>
     </entry>
