@@ -55,7 +55,7 @@ class Location
 
     public function __toString()
     {
-        return (string) $this->getId();
+        return (string) $this->getId().' '.$this->getCountry();
     }
 
     public function getId(): ?int
