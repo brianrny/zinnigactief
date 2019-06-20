@@ -31,7 +31,7 @@
                             <a class="nav-link col-12" href="{{ path("fos_user_profile_show") }}">Manage Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link col-12" href="{{ path('') }}">Manage Events</a>
+                            <a class="nav-link col-12" href="{{ path('event_index') }}">Manage Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link col-12" href="#">Schedule</a>
@@ -90,7 +90,7 @@
                     </a>
                 </li>
                 <li class="nav-item col-4">
-                    <a class="nav-link bold text-center" href="#">
+                    <a class="nav-link bold text-center" href="{{ path('activity_index') }}">
                     <span><img src="{{ asset("mbo-icons/calendar.svg") }}" class="bottom-footer-icons"
                                alt="x"></span>
                         <p class="pt-2">EVENTS</p></a>

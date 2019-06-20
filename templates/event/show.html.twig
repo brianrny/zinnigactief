@@ -9,9 +9,9 @@
             <div class="pt-2">
                 <div class="d-flex justify-content-center text-center">
                     <img class="event-about-img"
-                         src="{{ vich_uploader_asset(event, "file") }}" alt="x">
+                         src="{{ vich_uploader_asset(event, "file") }}" alt="empty">
                     <div class="bg-white event-description text-left p-3">
-                        <a class="event-map-icon" href="{{ path("event_map", {'id': event.id}) }}">
+                        <a class="event-map-icon" href="{{ path("event_show", {'id': event.id}) }}">
                             <img src="{{ asset("mbo-icons/send.svg") }}">
                         </a>
                         <h2 class="bold text-purple">{{ event.name }}</h2>

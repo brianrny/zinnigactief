@@ -15,7 +15,13 @@ class ActivityType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('file', VichImageType::class)
+            ->add('file', VichImageType::class/*, [
+                'required' => false,
+                'allow_delete' => true,
+                'empty_data' => $builder->getForm()->getData('activity')->getFileName(),
+                //  'download_uri' => '...',
+                'download_label' => 'download_file',
+            ]*/)
             ->add('max_people')
             ->add('description', CKEditorType::class)
         ;

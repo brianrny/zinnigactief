@@ -15,7 +15,13 @@ class EventType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('file', VichImageType::class)
+            ->add('file', VichImageType::class/*, [
+                'required' => false,
+                'allow_delete' => true,
+                'empty_data' => $builder->getForm()->getData('event')->getFileName(),
+                //  'download_uri' => '...',
+                'download_label' => 'download_file',
+            ]*/)
             ->add('start_date', DateTimeType::class, [
                 "date_widget" => "single_text",
                 "time_widget" => "single_text"
