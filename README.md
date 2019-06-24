@@ -15,4 +15,3 @@ Run :
  
   php bin/console ckeditor:install
   
-  
