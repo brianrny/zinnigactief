@@ -20,7 +20,7 @@ span img {
 }
 
 .text-purple{
-    color: #3A0F49;
+    color: #3A0F49 !important;
 }
 
 .event-container {
@@ -90,6 +90,7 @@ span img {
     width: 80%;
     height: 60%;
     color: #3A0F49;
+    background-color: #B0DEF3;
 }
 
 .event-map{
@@ -116,6 +117,7 @@ span img {
     border-radius: 0 0 10px 10px;
     width: 80%;
     height: 8%;
+    background-color: white;
 }
 
 .event-discover-img {
@@ -134,7 +136,7 @@ span img {
 
 .event-map-icon{
     border-radius: 100%;
-    background-image: linear-gradient(rgba(58, 15, 73), rgba(229, 65, 96));
+    background-image: linear-gradient(rgba(58, 15, 73, 1), rgba(229, 65, 96, 1));
     padding: 3%;
     position: absolute;
     top: -7%;
@@ -166,4 +168,65 @@ span img {
 .btn, .btn-primary {
     background-image: linear-gradient(rgba(58, 15, 73, 0.8), rgba(229, 65, 96, 0.8));
     border: none !important;
+}
+
+/** Header **/
+
+.navbar-toggler:focus {
+    outline: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+    background-color: #fff;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+    width: 16px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:hover > .icon-bar:nth-child(2){
+    width: 22px;
+    transition: ease all .2s;
+}
+.navbar-toggler:active > .icon-bar:nth-child(2){
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    transition: ease all .2s;
+}
+
+.usersstyles {
+    font-size: 18px;
+}
+
+label {
+    color: #000;
 }

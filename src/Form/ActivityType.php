@@ -1,3 +1,4 @@
+
 <?php
 
 namespace App\Form;
@@ -5,6 +6,7 @@ namespace App\Form;
 use App\Entity\Activity;
 use FOS\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Vich\UploaderBundle\Form\Type\VichImageType;
@@ -15,16 +17,15 @@ class ActivityType extends AbstractType
     {
         $builder
             ->add('name')
-            ->add('file', VichImageType::class/*, [
-                'required' => false,
-                'allow_delete' => true,
-                'empty_data' => $builder->getForm()->getData('activity')->getFileName(),
-                //  'download_uri' => '...',
-                'download_label' => 'download_file',
-            ]*/)
+            ->add('file', VichImageType::class, [
+                "required" => false,
+            ])
+            ->add('fileName', HiddenType::class)
+            ->add('fileSize', HiddenType::class, [
+                "required" => false,
+            ])
             ->add('max_people')
-            ->add('description', CKEditorType::class)
-        ;
+            ->add('description', CKEditorType::class);
     }
 
     public function configureOptions(OptionsResolver $resolver)
