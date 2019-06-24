@@ -62,28 +62,6 @@ class UserController extends AbstractController
     }
 
     /**
-     * @Route("/{id}/map", name="user_map", methods={"GET"})
-     */
-    public function map(User $user): Response
-    {
-        return $this->render('user/map.html.twig', [
-            'user' => $user,
-        ]);
-    }
-
-    /**
-     * @Route("/{id}/route", name="user_route", methods={"GET"})
-     */
-    public function route(User $user): Response
-    {
-        return $this->render('user/route.html.twig', [
-            'user' => $user,
-        ]);
-    }
-
-
-
-    /**
      * @Route("/{id}/edit", name="user_edit", methods={"GET","POST"})
      */
     public function edit(Request $request, User $user): Response
