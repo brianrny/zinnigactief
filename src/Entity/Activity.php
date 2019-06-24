@@ -5,9 +5,14 @@ namespace App\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Doctrine\DBAL\Types\DateTimeType;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ActivityRepository")
+ * @Vich\Uploadable
  */
 class Activity
 {
@@ -24,14 +29,25 @@ class Activity
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Vich\UploadableField(mapping="event", fileNameProperty="fileName", size="fileSize")
+     *
+     * @var File
      */
     private $file;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
+     *
+     * @var string
      */
     private $file_name;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     *
+     * @var integer
+     */
+    private $file_size;
 
     /**
      * @ORM\Column(type="integer")
@@ -39,7 +55,7 @@ class Activity
     private $max_people;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="text")
      */
     private $description;
 
@@ -57,6 +73,8 @@ class Activity
     {
         $this->periods = new ArrayCollection();
         $this->eventHasActivities = new ArrayCollection();
+        $this->start_date = new \DateTime();
+        $this->end_date = new \DateTime();
     }
 
     public function getId(): ?int
@@ -76,16 +94,23 @@ class Activity
         return $this;
     }
 
-    public function getFile(): ?string
-    {
-        return $this->file;
-    }
-
-    public function setFile(string $file): self
+    /**
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $file
+     */
+    public function setFile(File $file = null): void
     {
         $this->file = $file;
 
-        return $this;
+        if (null !== $file) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTimeImmutable();
+        }
+    }
+
+    public function getFile(): ?File
+    {
+        return $this->file;
     }
 
     public function getFileName(): ?string
@@ -98,6 +123,16 @@ class Activity
         $this->file_name = $file_name;
 
         return $this;
+    }
+
+    public function setFileSize(?int $file_size): void
+    {
+        $this->file_size = $file_size;
+    }
+
+    public function getFileSize(): ?int
+    {
+        return $this->file_size;
     }
 
     public function getMaxPeople(): ?int
