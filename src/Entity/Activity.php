@@ -87,7 +87,7 @@ class Activity
         return $this->name;
     }
 
-    public function setName(string $name): self
+    public function setName(?string $name): self
     {
         $this->name = $name;
 
@@ -118,7 +118,7 @@ class Activity
         return $this->file_name;
     }
 
-    public function setFileName(string $file_name): self
+    public function setFileName(?string $file_name): self
     {
         $this->file_name = $file_name;
 
