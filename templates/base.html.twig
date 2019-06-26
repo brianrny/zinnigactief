@@ -59,7 +59,7 @@
                     {% endif %}
                 {% endif %}
             {% if is_granted("IS_AUTHENTICATED_FULLY") %}
-                <p class="text-center col-12 mb-1">{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</p>
+                <p class="text-center col-12 mb-1">Ingelogd als: {{ app.user.username }}</p>
                 <li class="nav-item">
                     <a href="{{ path('fos_user_security_logout') }}" class="col-12 mb-1 justify-content-center text-white usersstyles text-center nav-link">
                         <i class="fas fa-user-minus fa-lg mb-3 mr-3"></i> Log-out
