@@ -134,9 +134,13 @@ span img {
     border-radius: 10px;
 }
 
+.event-about-img .user-banner {
+    height: 30vh !important;
+}
+
 .event-map-icon{
     border-radius: 100%;
-    background-image: linear-gradient(rgba(58, 15, 73, 1), rgba(229, 65, 96, 1));
+    background-image: linear-gradient(rgb(58, 15, 73), rgb(229, 65, 96));
     padding: 3%;
     position: absolute;
     top: -7%;
@@ -158,7 +162,7 @@ span img {
 
 #collapse_menu {
     position: absolute;
-    top: 7.5vh;
+    top: 7.68vh;
     left: 0;
     right: 0;
     z-index: 9999;
@@ -171,6 +175,10 @@ span img {
 }
 
 /** Header **/
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
 
 .navbar-toggler:focus {
     outline: none;
@@ -229,4 +237,35 @@ span img {
 
 label {
     color: #000;
+}
+
+.user_events {
+    background: url("../images/4k-wallpaper-clouds-cloudy-1668246.jpg");
+    border-radius: 10px;
+}
+
+.profile_img {
+    border-radius: 200px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: -10px;
+    z-index: 99;
+    position: relative;
+}
+
+.user-description {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    width: 80%;
+    height: 80%;
+    color: #3A0F49;
+}
+
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }

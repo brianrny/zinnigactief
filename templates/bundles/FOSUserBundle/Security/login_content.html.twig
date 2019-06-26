@@ -30,19 +30,19 @@
     <div class="d-flex justify-content-center mt-5">
         <aside class="col-sm-4">
             <div class="card">
-                <article class="card-body">
-                    <h4 class="card-title mb-4 mt-1">Sign in</h4>
+                <article class="card-body text-dark">
+                    <h4 class="card-title mb-4 mt-1 text-dark">Sign in</h4>
                     <form>
                         <div class="form-group">
-                            <label for="username">{{ 'security.login.username'|trans }}</label>
+                            <label class="text-dark" for="username">{{ 'security.login.username'|trans }}</label>
                             <input type="text" id="username" name="_username" class="form-control" value="{{ last_username }}" required="required">
                         </div>
                         <div class="form-group">
-                            <label for="password">Password</label>
+                            <label class="text-dark" for="password">Password</label>
                             <input type="password" id="password" name="_password" class="form-control" autocomplete="current_password" required="required">
                         </div>
                         <div class="form-group">
-                            <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
+                            <label class="text-dark" for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
                             <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
                             <a class="float-right" href="{{ path("fos_user_resetting_request") }}">Forgot?</a>
                         </div>

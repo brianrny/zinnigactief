@@ -36,7 +36,10 @@
     <script type="text/javascript" src="{{ asset("js/swiper.js") }}"></script>
 
     <script>
-        var swiper = new Swiper('.event-container');
+        var swiper = new Swiper('.event-container', {
+            loop: true,
+            preloadImages: true,
+        });
     </script>
 
 {% endblock %}

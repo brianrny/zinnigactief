@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheet %}{% endblock %}
     <link rel="stylesheet" href="{{ asset("css/styles.css") }}">
@@ -11,10 +12,10 @@
 </head>
 <body>
 <header class="d-flex justify-content-center" style="background-color: #3A0F49;">
-    <nav class="navbar navbar-dark col-12 col-md-6 col-lg-4 col-xl-3">
-        <a class="navbar-brand ml-4" href="{{ path('index') }}"><img src="{{ asset("images/MBORijnlandlogo.png") }}"
+    <nav class="navbar navbar-dark col-12 col-lg-3">
+        <a class="navbar-brand ml-5" href="{{ path('index') }}"><img src="{{ asset("images/MBORijnlandlogo.png") }}"
                                                                      alt=""></a>
-        <button class="navbar-toggler collapsed mr-4" style="border: none;" type="button" data-toggle="collapse"
+        <button class="navbar-toggler collapsed" style="border: none;" type="button" data-toggle="collapse"
                 data-target="#collapse_menu" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar top-bar"></span>
             <span class="icon-bar middle-bar"></span>
@@ -58,22 +59,22 @@
                         </li>
                     {% endif %}
                 {% endif %}
-                {% if is_granted("IS_AUTHENTICATED_FULLY") %}
-                    <p class="text-center col-12 mb-1">{{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }}</p>
-                    <li class="nav-item">
-                        <a href="{{ path('fos_user_security_logout') }}" class="col-12 mb-1 justify-content-center text-white usersstyles text-center nav-link">
-                            <i class="fas fa-user-minus fa-lg mb-3 mr-3"></i> Log-out
-                        </a>
-                    </li>
-                {% else %}
-                    <a href="{{ path('fos_user_security_login') }}" class="col-12 mb-5 justify-content-center text-white usersstyles">
-                        <i class="fas fa-users fa-lg mb-1 mr-3"></i> Log-in
+            {% if is_granted("IS_AUTHENTICATED_FULLY") %}
+                <p class="text-center col-12 mb-1">Ingelogd als: {{ app.user.username }}</p>
+                <li class="nav-item">
+                    <a href="{{ path('fos_user_security_logout') }}" class="col-12 mb-1 justify-content-center text-white usersstyles text-center nav-link">
+                        <i class="fas fa-user-minus fa-lg mb-3 mr-3"></i> Log-out
                     </a>
+                </li>
+            {% else %}
+                <a href="{{ path('fos_user_security_login') }}" class="col-12 mb-5 justify-content-center text-white usersstyles">
+                    <i class="fas fa-users fa-lg mb-1 mr-3"></i> Log-in
+                </a>
 
-                    <a href="{{ path('fos_user_registration_register') }}" class="col-12 mb-1 text-white usersstyles">
-                        <i class="fas fa-user-plus fa-lg mr-3"></i> Register
-                    </a>
-                {% endif %}
+                <a href="{{ path('fos_user_registration_register') }}" class="col-12 mb-1 text-white usersstyles">
+                    <i class="fas fa-user-plus fa-lg mr-3"></i> Register
+                </a>
+            {% endif %}
             </ul>
         </div>
     </nav>
@@ -117,5 +118,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/b7f68b3811.js"></script>
 </body>
 </html>
