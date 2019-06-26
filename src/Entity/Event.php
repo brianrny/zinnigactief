@@ -4,10 +4,14 @@ namespace App\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
+use Doctrine\DBAL\Types\DateTimeType;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
+use Vich\UploaderBundle\Mapping\Annotation as Vich;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\EventRepository")
+ * @Vich\Uploadable
  */
 class Event
 {
@@ -24,14 +28,25 @@ class Event
     private $name;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @Vich\UploadableField(mapping="event", fileNameProperty="fileName", size="fileSize")
+     *
+     * @var File
      */
     private $file;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
+     *
+     * @var string
      */
     private $file_name;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     *
+     * @var integer
+     */
+    private $file_size;
 
     /**
      * @ORM\Column(type="datetime")
@@ -49,14 +64,25 @@ class Event
     private $location_id;
 
     /**
+     * @ORM\Column(type="datetime")
+     *
+     * @var \DateTime
+     */
+    private $updatedAt;
+
+    /**
      * @ORM\OneToMany(targetEntity="App\Entity\EventHasActivity", mappedBy="event_id")
      */
     private $eventHasActivities;
 
+
     public function __construct()
     {
         $this->eventHasActivities = new ArrayCollection();
+        $this->start_date = new \DateTime();
+        $this->end_date = new \DateTime();
     }
+
 
     public function getId(): ?int
     {
@@ -68,23 +94,30 @@ class Event
         return $this->name;
     }
 
-    public function setName(string $name): self
+    public function setName(?string $name): self
     {
         $this->name = $name;
 
         return $this;
     }
 
-    public function getFile(): ?string
-    {
-        return $this->file;
-    }
-
-    public function setFile(string $file): self
+    /**
+     * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $file
+     */
+    public function setFile(?File $file = null): void
     {
         $this->file = $file;
 
-        return $this;
+        if (null !== $file) {
+            // It is required that at least one field changes if you are using doctrine
+            // otherwise the event listeners won't be called and the file is lost
+            $this->updatedAt = new \DateTimeImmutable();
+        }
+    }
+
+    public function getFile(): ?File
+    {
+        return $this->file;
     }
 
     public function getFileName(): ?string
@@ -92,11 +125,21 @@ class Event
         return $this->file_name;
     }
 
-    public function setFileName(string $file_name): self
+    public function setFileName(?string $file_name): self
     {
         $this->file_name = $file_name;
 
         return $this;
+    }
+
+    public function setFileSize(?int $file_size): void
+    {
+        $this->file_size = $file_size;
+    }
+
+    public function getFileSize(): ?int
+    {
+        return $this->file_size;
     }
 
     public function getStartDate(): ?\DateTimeInterface
@@ -133,6 +176,11 @@ class Event
         $this->location_id = $location_id;
 
         return $this;
+    }
+
+    public function getUpdatedAt(): ?\DateTimeInterface
+    {
+        return $this->updatedAt;
     }
 
     /**

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ asset("css/styles.css") }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 <header class="d-flex justify-content-center" style="background-color: #3A0F49;">
@@ -31,7 +32,7 @@
                             <a class="nav-link col-12" href="{{ path("fos_user_profile_show") }}">Manage Users</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link col-12" href="#">Manage Events</a>
+                            <a class="nav-link col-12" href="{{ path('event_index') }}">Manage Events</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link col-12" href="#">Schedule</a>
@@ -83,7 +84,7 @@
 {% block fos_user_content %}{% endblock %}
 <footer class="d-flex justify-content-center">
     <nav class="navbar fixed-bottom navbar-expand">
-        <div class="container-fluid col-12 col-lg-3">
+        <div class="container-fluid col-12 col-md-6 col-lg-4 col-xl-3">
             <ul class="navbar-nav col-12">
                 <li class="nav-item col-4">
                     <a class="nav-link bold text-center" href="{{ path("index") }}">
@@ -92,7 +93,7 @@
                     </a>
                 </li>
                 <li class="nav-item col-4">
-                    <a class="nav-link bold text-center" href="#">
+                    <a class="nav-link bold text-center" href="{{ path('activity_index') }}">
                     <span><img src="{{ asset("mbo-icons/calendar.svg") }}" class="bottom-footer-icons"
                                alt="x"></span>
                         <p class="pt-2">EVENTS</p></a>

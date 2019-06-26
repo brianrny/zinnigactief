@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show_content.html.twig" line="29" mnemonic="5" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f2d7110d-1e1e-48c5-8853-46f59c8ee313" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/public/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show_content.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show_content.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="zinnigactief" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="84" column="28" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="28" />
+              <folding>
+                <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#2894#2915#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show_content.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="e#1133#1142#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+              <folding>
+                <element signature="e#84#123#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="297">
+              <caret line="233" column="1" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>event-abou</find>
+      <find>event-about-img</find>
+      <find>use</find>
+      <find>event-descrip</find>
+      <find>user</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/bundles/FOSUserBundle/ChangePassword/change_password.html.twig" />
+        <option value="$PROJECT_DIR$/templates/bundles/FOSUserBundle/Resetting/request.html.twig" />
+        <option value="$PROJECT_DIR$/templates/bundles/FOSUserBundle/ChangePassword/change_password_content.html.twig" />
+        <option value="$PROJECT_DIR$/templates/bundles/FOSUserBundle/Resetting/request_content.html.twig" />
+        <option value="$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show.html.twig" />
+        <option value="$PROJECT_DIR$/templates/user/index.html.twig" />
+        <option value="$PROJECT_DIR$/public/css/styles.css" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show_content.html.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-eventmanager" />
+      <path value="$PROJECT_DIR$/vendor/friendsofsymfony/user-bundle" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-code" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/proxy-manager" />
+      <path value="$PROJECT_DIR$/vendor/easycorp/easy-log-handler" />
+      <path value="$PROJECT_DIR$/vendor/facebook/webdriver" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/persistence" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-migrations-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/migrations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/common" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/orm" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/reflection" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-cache-bundle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/stopwatch" />
+      <path value="$PROJECT_DIR$/vendor/symfony/config" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dotenv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/framework-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/flex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/orm-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-profiler-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-link" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-exporter" />
+      <path value="$PROJECT_DIR$/vendor/symfony/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/panther" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/expression-language" />
+      <path value="$PROJECT_DIR$/vendor/symfony/maker-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/web-server-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/twig-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/swiftmailer-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/serializer-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/symfony/cache" />
+      <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/monolog-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/test-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dom-crawler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/profiler-pack" />
+      <path value="$PROJECT_DIR$/vendor/symfony/templating" />
+      <path value="$PROJECT_DIR$/vendor/symfony/validator" />
+      <path value="$PROJECT_DIR$/vendor/symfony/browser-kit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-guard" />
+      <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/sensio/framework-extra-bundle" />
+      <path value="$PROJECT_DIR$/vendor/twig/twig" />
+      <path value="$PROJECT_DIR$/vendor/jdorn/sql-formatter" />
+      <path value="$PROJECT_DIR$/vendor/psr/link" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/fig/link-util" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/contracts" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+    </include_path>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/zinnigactief.iml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/symfony2.xml" />
+        <option value="$PROJECT_DIR$/.idea/php.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="679" />
+    <option name="y" value="-22" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="attend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="FOSUserBundle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="FOSUserBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="ChangePassword" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="FOSUserBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="FOSUserBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="FOSUserBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Resetting" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bundles" type="462c0819:PsiDirectoryNode" />
+              <item name="FOSUserBundle" type="462c0819:PsiDirectoryNode" />
+              <item name="Security" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="event" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zinnigactief" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zinnigactief" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f2d7110d-1e1e-48c5-8853-46f59c8ee313" name="Default Changelist" comment="" />
+      <created>1560943535191</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560943535191</updated>
+      <workItem from="1560943537730" duration="4636000" />
+      <workItem from="1561021166358" duration="55000" />
+      <workItem from="1561021406836" duration="209000" />
+      <workItem from="1561026250981" duration="966000" />
+      <workItem from="1561358576866" duration="4354000" />
+      <workItem from="1561532406995" duration="7208000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17428000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16257995" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2751896" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/place/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/activity/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/event/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/ChangePassword/change_password.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
+          <folding>
+            <element signature="e#12#37#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Registration/register_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/ChangePassword/change_password_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="e#97#121#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Resetting/request.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#12#37#0#Twig" expanded="true" />
+            <element signature="e#88#132#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Registration/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#37#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Security/login_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="50" column="107" selection-start-line="50" selection-start-column="107" selection-end-line="50" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Resetting/request_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="129" selection-start-line="16" selection-start-column="129" selection-end-line="16" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/activity/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="94" selection-start-line="20" selection-start-column="94" selection-end-line="20" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/event/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret column="30" selection-start-column="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#12#26#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding>
+            <element signature="e#84#123#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/user/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="233" column="1" selection-start-line="233" selection-start-column="1" selection-end-line="233" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="84" column="28" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="28" />
+          <folding>
+            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2894#2915#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/bundles/FOSUserBundle/Profile/show_content.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#1133#1142#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

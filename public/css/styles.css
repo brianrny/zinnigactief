@@ -20,7 +20,7 @@ span img {
 }
 
 .text-purple{
-    color: #3A0F49;
+    color: #3A0F49 !important;
 }
 
 .event-container {
@@ -90,6 +90,7 @@ span img {
     width: 80%;
     height: 60%;
     color: #3A0F49;
+    background-color: #B0DEF3;
 }
 
 .event-map{
@@ -116,6 +117,7 @@ span img {
     border-radius: 0 0 10px 10px;
     width: 80%;
     height: 8%;
+    background-color: white;
 }
 
 .event-discover-img {
@@ -173,11 +175,11 @@ span img {
 }
 
 /** Header **/
-
 .navbar-toggler {
     border: none;
     background: transparent !important;
 }
+
 .navbar-toggler:focus {
     outline: none;
     background: transparent !important;
