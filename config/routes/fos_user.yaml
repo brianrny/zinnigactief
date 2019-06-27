@@ -1,2 +1,6 @@
+fos_user_security_login_override:
+  path: /login
+  defaults: { _controller: App\Controller\SecurityController::loginAction }
+
 fos_user:
   resource: "@FOSUserBundle/Resources/config/routing/all.xml"

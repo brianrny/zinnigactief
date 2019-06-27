@@ -40,6 +40,9 @@
                         <li class="nav-item">
                             <a class="nav-link col-12" href="#">Profile</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link col-12" href="{{ path('overview') }}">Statistics</a>
+                        </li>
                     {% elseif is_granted("ROLE_EVENT") %}
                         <li class="nav-item">
                             <a class="nav-link col-12" href="#">Manage Events</a>
