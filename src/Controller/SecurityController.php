@@ -69,19 +69,19 @@ class SecurityController extends BaseController {
                     // REMOVE USER FIRST
                     $user = $userManager->findUserByUsername(substr ($lastUsername, 0, strpos ($lastUsername, '@')));
                     if ($user) {
-                        $userManager->deleteUser ($user);
+                        // $userManager->deleteUser ($user);
+                        $userManager->updateUser($user, true);
+                    } else {
+                        // Create our user and set details (check if user already in table).
+                        $user = $userManager->createUser();
+                        $user->setUsername(substr($lastUsername, 0, strpos($lastUsername, '@')));
+                        $user->setEmail($lastUsername);
+                        $user->setPlainPassword($password);
+                        $user->setEnabled((Boolean)true);
+                        $user->addRole('ROLE_USER');
+                        // Update the user
+                        $userManager->updateUser($user, true);
                     }
-
-                    // Create our user and set details
-                    $user = $userManager->createUser ();
-                    $user->setUsername (substr ($lastUsername, 0, strpos ($lastUsername, '@')));
-                    $user->setEmail ($lastUsername);
-                    $user->setPlainPassword ($password);
-                    $user->setEnabled ((Boolean)true);
-                    $user->addRole ('ROLE_USER');
-                    // Update the user
-                    $userManager->updateUser($user, true);
-
                     $token = new UsernamePasswordToken(
                         $user,
                         $user->getPassword (),
