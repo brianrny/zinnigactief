@@ -1,4 +1,36 @@
-{{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
-{{ form_end(form) }}
+<style>
+  .navbar.fixed-bottom.navbar-expand {
+      display: none !important;
+  }
+</style>
+
+<div class="card mx-auto" style="width: 50rem;">
+  <img src="{{ vich_uploader_asset(event, "file") }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h3 class="text-dark font-weight-bold">Titel</h3>
+          <br>
+          <input type="text" class="form-control" placeholder="Titel">
+        </div>
+        <div class="col-sm">
+          <h3 class="text-dark font-weight-bold">Startdatum</h3>
+          <br>
+          <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+        </div>
+        <div class="col-sm">
+          <h3 class="text-dark font-weight-bold">Einddatum</h3>
+          <br>
+          <input type="date" class="form-control" placeholder="dd/mm/yyyy">
+        </div>
+      </div>
+      <br><br>
+      <h3 class="text-dark font-weight-bold">Beschrijving</h3>
+      <br>
+      <textarea class="form-control" rows="3" placeholder="Type hier je beschrijving in..."></textarea>
+      <br><br>
+      <a href="{{ path('event_index') }}" class="btn btn-primary">Terug naar events</a>
+      <a href="#" class="btn btn-primary">Opslaan</a>
+  </div>
+</div>
