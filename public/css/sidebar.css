@@ -1,0 +1,23 @@
+.col-md-2.d-none.d-md-block.bg-light.sidebar {
+    margin-bottom: -46%;
+    max-width: 7%;
+    height: 92.7%;
+    background-color: white !important;
+}
+.nav-link-text{
+    font-size: 22px;
+    line-height: 21px;
+    color: #E54160;
+    margin-left: -50%;
+    margin-top: 1%;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: white;
+}
+.custom-button-verwijder{
+
+}
+
+custom-button-

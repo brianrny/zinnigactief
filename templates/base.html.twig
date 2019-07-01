@@ -6,6 +6,7 @@
     <title>{% block title %}Welcome!{% endblock %}</title>
     {% block stylesheet %}{% endblock %}
     <link rel="stylesheet" href="{{ asset("css/styles.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/sidebar.css") }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,9 +83,76 @@
         </div>
     </nav>
 </header>
+{% if is_granted('ROLE_ADMIN') %}
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link nav-link-edit" href="/">
+                    <img style="margin-left:-15%;" height="125px" width="100px" class="sidebar-image" src="{{ asset('images/sidebar/image.png') }}"><br>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-link-edit" href="{{ path('event_index') }}">
+                   <img height="50px" width="50px" class="sidebar-image" src="{{ asset('images/sidebar/checklist.png') }}"><br>
+                    <p class="nav-link-text">Evenement</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-link-edit" href="/">
+                    <img height="50px" width="50px" class="sidebar-image" src="{{ asset('images/sidebar/ticket.png') }}"><br>
+                    <p class="nav-link-text">Ticket</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-link-edit" href="{{ path('user_index') }}">
+                    <img height="50px" width="50px" class="sidebar-image" src="{{ asset('images/sidebar/users.png') }}"><br>
+                    <p class="nav-link-text">User</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-link-edit" href="{{ path('period_index') }}">
+                    <img height="50px" width="50px" class="sidebar-image" src="{{ asset('images/sidebar/clock.png') }}"><br>
+                    <p class="nav-link-text">Period</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-link-edit" href="{{ path('location_index') }}">
+                    <img height="50px" width="50px" class="sidebar-image" src="{{ asset('images/sidebar/placeholder.png') }}"><br>
+                    <p class="nav-link-text">Location</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-link-edit" href="{{ path('attend_index') }}">
+                    <img height="50px" width="50px" class="sidebar-image" src="{{ asset('images/sidebar/checked.png') }}"><br>
+                    <p class="nav-link-text">Attend</p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link nav-link-edit" href="{{ path('place_index') }}">
+                    <img height="50px" width="50px" class="sidebar-image" src="{{ asset('images/sidebar/map.png') }}"><br>
+                    <p class="nav-link-text">Place</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div>
+    </div>
+</nav>
+{% endif %}
+<div class="body-edit">
 {% block body %}{% endblock %}
+{% block admin %}{% endblock %}
 {% block javascripts %}{% endblock %}
 {% block fos_user_content %}{% endblock %}
+</div>
 <footer class="d-flex justify-content-center">
     <nav class="navbar fixed-bottom navbar-expand">
         <div class="container-fluid col-12 col-md-6 col-lg-4 col-xl-3">
