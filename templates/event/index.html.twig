@@ -2,69 +2,40 @@
 
 {% block title %}Event index{% endblock %}
 
-{% block body %}
-    <link rel="stylesheet" href="{{ asset("css/swiper.css") }}">
+{% block admin %}
+    <style>
+        .navbar.fixed-bottom.navbar-expand {
+            display: none !important;
+        }
+        .navigation a{
+            color: white;
+        }
+        .card {display:inline-block;}
+        .example-wrapper { margin: 1em auto; max-width: 90%; width: 100%;}
+    </style>
 
-    <div class="event-container swiper-container-initialized swiper-container-horizontal col-12 col-lg-3">
-        <div class="swiper-wrapper">
-            {% for event in events %}
-                <div class="swiper-slide pt-4">
-                    <div class="d-flex justify-content-center text-center">
-                        <h3 class="text-white event-title bold">{{ event.name }}</h3>
-                        <a href="{{ path('event_show', {'id': event.id}) }}" class="text-white event-more"><p
-                                    class="pt-1 bold">Bekijk event</p></a>
-                        <img class="event-discover-img"
-                             src="{{ vich_uploader_asset(event, 'file') }}" alt="x">
-                        {#{% if (workshop.likes * 1.1) > workshop.maxparticipants %}#}
-                        {#<div class="text-white workshop-more">Dit event kan vol zitten</div>#}
-                        {#{% else %}#}
-                        {#<div class="text-white workshop-more">Er is nog plek</div>#}
-                        {#{% endif %}#}
-                        <div class="bg-white event-footer">
-                            <img class="float-left pt-3 pl-3" src="{{ asset("mbo-icons/heart.svg") }}">
-                            <p class="text-dark float-left pt-3 pl-2">{{ event.id }} likes</p>
-                            <p class="text-dark float-right pt-3 pr-3">{{ event.startDate ? event.startDate|date("Y-m-d") : '' }}</p>
+<div class="example-wrapper">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-9">
+                {% for event in events %}
+                    <div class="card" style="width: 25%; margin-left: 3%; margin-bottom: 1.2%;">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" alt="Card image cap">
+                        <div class="card-body">
+                            <h3 style="color: black;">{{ event.name }}</h3>
+                            <a href="{{ path('event_show', {id:event.id}) }}" class="card-text" style="color:black">{% if event.description is empty %} No description... {% else %} {{ event.description|length > 50 ? event.description|slice(0, 50) ~ '...' : event.description  }} {% endif %}</a>
+                          <br><br>
+                            <a href="{{ path('event_delete', {id:event.id}) }}"><button type="button" class="btn custom-button btn-danger">Verwijder</button></a>
+                            <a href="{{ path('event_edit', {id:event.id}) }}"><button type="button" class="btn btn-info">Bewerk</button></a>
                         </div>
                     </div>
-                </div>
-            {% else %}
-                <h1>Voeg meer events toe</h1>
-            {% endfor %}
-        </div>
+                {% endfor %}
     </div>
+</div>
+    <div class="navigation" style="color:white; margin-left: 20%; letter-spacing: 10px;">
+        {{ knp_pagination_render(events) }}
+    </div>
+</div>
 
-    <script type="text/javascript" src="{{ asset("js/swiper.js") }}"></script>
-
-    <script>
-        var swiper = new Swiper('.event-container');
-    </script>
 
 {% endblock %}
-
-
-            {#<tr>#}
-                {#<th>Id</th>#}
-                {#<th>Name</th>#}
-                {#<th>File</th>#}
-                {#<th>File_name</th>#}
-                {#<th>Start_date</th>#}
-                {#<th>End_date</th>#}
-                {#<th>actions</th>#}
-            {#</tr>#}
-        {#</thead>#}
-        {#<tbody>#}
-        {#{% for event in events %}#}
-            {#<tr>#}
-                {#<td>{{ event.id }}</td>#}
-                {#<td>{{ event.name }}</td>#}
-                {#<td>{{ event.file }}</td>#}
-                {#<td>{{ event.fileName }}</td>#}
-                {#<td>{{ event.startDate ? event.startDate|date('Y-m-d H:i:s') : '' }}</td>#}
-                {#<td>{{ event.endDate ? event.endDate|date('Y-m-d H:i:s') : '' }}</td>#}
-                {#<td>#}
-                    {#<a href="{{ path('event_show', {'id': event.id}) }}">show</a>#}
-                    {#<a href="{{ path('event_edit', {'id': event.id}) }}">edit</a>#}
-                {#</td>#}
-            {#</tr>#}
-
-    {#<a href="{{ path('event_new') }}">Create new</a>#}
