@@ -25,7 +25,11 @@
                             <h3 style="color: black;">{{ event.name }}</h3>
                             <a href="{{ path('event_show', {id:event.id}) }}" class="card-text" style="color:black">{% if event.description is empty %} No description... {% else %} {{ event.description|length > 50 ? event.description|slice(0, 50) ~ '...' : event.description  }} {% endif %}</a>
                           <br><br>
-                            <a href="{{ path('event_delete', {id:event.id}) }}"><button type="button" class="btn custom-button btn-danger">Verwijder</button></a>
+                            <form method="post" action="{{ path('event_delete', {'id': event.id}) }}" onsubmit="return confirm('Are you sure you want to delete this item?');">
+                                <input type="hidden" name="_method" value="DELETE">
+                                <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ event.id) }}">
+                                <button type="button" class="btn custom-button btn-danger">Verwijder</button>
+                            </form> 
                             <a href="{{ path('event_edit', {id:event.id}) }}"><button type="button" class="btn btn-info">Bewerk</button></a>
                         </div>
                     </div>
