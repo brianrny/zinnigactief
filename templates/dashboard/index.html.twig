@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello DashboardController!{% endblock %}
+
+{% block body %}
+<style>
+    #wrapper{
+        margin-left: 7%;
+        margin-top: 2%;
+    }
+</style>
+
+<div id="wrapper">
+
+<div id="content-wrapper">
+
+    <div
+        class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="#">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Overview</li>
+        </ol>
+
+        <!-- Icon Cards-->
+        <div class="row">
+            <div class="col-xl-6 col-sm-3 mb-3">
+                <div class="card-header bg-transparent border-success">Gebruikers</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">2100</h5>
+                    <p class="card-text">Gebruikers op dit moment</p>
+                </div>
+            </div>
+            <div class="col-xl-6 col-sm-3 mb-3">
+                <div class="card-header bg-transparent border-success">Events</div>
+                <div class="card-body text-success">
+                    <h5 class="card-title">20</h5>
+                    <p class="card-text">Events op dit moment</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                {% for event in events %}
+                    <div class="col-md-4" style="margin-top:20px;margin-bottom:20px;">
+                        <div class="card">
+                        <img class="card-img-top" src="{{ vich_uploader_asset(event, 'file') }}" style="height: 225px; width: 100%; display: block;">
+                            <div class="card-body">
+                                <h3 style="color: black;">{{ event.name }}</h3>
+                                <a href="{{ path('event_show', {id:event.id}) }}" class="card-text" style="color:black">
+                                    {% if event.description is empty %}
+                                        No description...
+                                    {% else %}
+                                        {{ event.description|length > 50 ? event.description|slice(0, 50) ~ '...' : event.description  }}
+                                    {% endif %}
+                                </a>
+                                <br><br>
+                                <a href="{{ path('event_delete', {id:event.id}) }}">
+                                    <button class="btn custom-button btn-danger" type="button">Verwijder</button>
+                                </a>
+                                <a href="{{ path('event_edit', {id:event.id}) }}">
+                                    <button class="btn btn-info" type="button">Bewerk</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+                <div class="card mb-3">
+                    <img class="card-img-top" src="https://cdn.muenchen-p.de/image/fetch/c_scale,w_1180/c_crop,g_center,h_442,w_1180/https://www.muenchen.de/media/va-2017/tollwood-2017/teaser/tollwood-2017-hp-01.jpg" style="height: 225px; width: 100%; display: block;">
+                    <div class="card-body">
+                        <h5 class="card-title" style="color: black;">Card title</h5>
+                        <p class="card-text" style="color: black;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- /.container-fluid -->
+
+        </div>
+</div>
+<!-- /.content-wrapper --></div><!-- /#wrapper --><!-- Scroll to Top Button--><a class="scroll-to-top rounded" href="#page-top">
+<i class="fas fa-angle-up"></i></a>
+
+</div>
+{% endblock %}

@@ -1,23 +1,29 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Workshop{% endblock %}
+{% block title %}User{% endblock %}
 
 {% block body %}
-    <div class="event-container col-12 col-lg-3">
+    <div class="event-container col-12 col-md-6 col-lg-4 col-xl-3">
         <p class="ml-5 event-about-title">Rooster {{ activity.name }}</p>
         <div class="event-wrapper">
             <div class="pt-2">
                 <div class="d-flex justify-content-center text-center">
                     <h3 class="text-white event-route-title bold">{{ activity.name }}</h3>
-                    <img class="event-about-img"
-                         src="{{ vich_uploader_asset(activity, "file") }}" alt="x">
-                    <div class="bg-white event-route">
-                        <div class="w-100 h-100" style="border-radius: 0 0 50px 50px;">
+                    {% if activity.fileName == '' %}
+                        <img class="event-about-img"
+                             src="{{ asset("images/4k-wallpaper-clouds-cloudy-1668246.jpg") }}" alt="x">
+                    {% else %}
+                        <img class="event-about-img"
+                             src="{{ vich_uploader_asset(activity, "file") }}" alt="x">
+                    {% endif %}
+                    <div class="event-route">
+                        <div class="w-100 h-100" style="border-radius: 0px 0px 10px 10px;background-color: #B0DEF3;">
                             <div class="pt-4 pl-5">
                                 <img class="float-left  " src="{{ asset("mbo-icons/walk.svg") }}" alt="x">
                                 <div class="ml-3 pl-5">
-                                    <p class="text-purple bold float-left mb-0" style="font-size: .75em">Eerst volgende tijd:</p><br>
-                                    {#<p class="text-purple bold float-left mb-0" style="font-size: 1.25em; line-height: .2em">{{ activity.startDate ? activity.startDate|date("Y-m-d") : '' }}</p>#}
+                                    <p class="text-white bold float-left mb-0" style="font-size: .75em">Eerst volgende
+                                        tijd:</p><br>
+                                    {#<p class="text-white bold float-left mb-0" style="font-size: 1.25em; line-height: .2em">{{ activity.periods ? activity.periods|date("Y-m-d") : '' }}</p>#}
                                 </div>
                             </div>
                         </div>

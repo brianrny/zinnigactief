@@ -8,6 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 use Doctrine\DBAL\Types\DateTimeType;
 use Symfony\Component\HttpFoundation\File\File;
 use Vich\UploaderBundle\Mapping\Annotation as Vich;
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\ActivityRepository")
@@ -35,14 +36,14 @@ class Activity
     private $file;
 
     /**
-     * @ORM\Column(type="string", length=255)
+     * @ORM\Column(type="string", length=255, nullable=true)
      *
      * @var string
      */
     private $file_name;
 
     /**
-     * @ORM\Column(type="integer")
+     * @ORM\Column(type="integer", nullable=true)
      *
      * @var integer
      */
@@ -86,7 +87,7 @@ class Activity
         return $this->name;
     }
 
-    public function setName(string $name): self
+    public function setName(?string $name): self
     {
         $this->name = $name;
 
@@ -96,7 +97,7 @@ class Activity
     /**
      * @param File|\Symfony\Component\HttpFoundation\File\UploadedFile $file
      */
-    public function setFile(?File $file = null): void
+    public function setFile(File $file = null): void
     {
         $this->file = $file;
 
@@ -117,7 +118,7 @@ class Activity
         return $this->file_name;
     }
 
-    public function setFileName(string $file_name): self
+    public function setFileName(?string $file_name): self
     {
         $this->file_name = $file_name;
 

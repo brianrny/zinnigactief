@@ -1,4 +1,45 @@
+<style>
+  .navbar.fixed-bottom.navbar-expand {
+      display: none !important;
+  }
+</style>
+
 {{ form_start(form) }}
-    {{ form_widget(form) }}
-    <button class="btn">{{ button_label|default('Save') }}</button>
-{{ form_end(form) }}
+{{ form_errors(form) }}
+{{ form_row(form._token) }}
+
+<div class="card mx-auto" style="width: 80%;">
+  <img src="{{ vich_uploader_asset(event, "file") }}" class="card-img-top" alt="..." style="height: 500px;">
+  <div class="card-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h3 class="text-dark font-weight-bold">Titel</h3>
+          <br>
+          {{ form_row(form.name, {'attr': {'class': 'form-control', 'placeholder':'Titel'} }) }}
+        </div>
+        <div class="col-sm">
+          <h3 class="text-dark font-weight-bold">Startdatum</h3>
+          <br>
+           {{ form_row(form.start_date, {'attr': {'class': 'form-control'} }) }}
+        </div>
+        <div class="col-sm">
+          <h3 class="text-dark font-weight-bold">Einddatum</h3>
+          <br>
+            {{ form_row(form.end_date, {'attr': {'class': 'form-control'} }) }}
+        </div>
+      </div>
+      <br>
+      <h3 class="text-dark font-weight-bold">Locatie</h3>
+      <br>
+        {{ form_row(form.location_id, {'attr': {'class': 'form-control'} }) }}
+      <br><br>
+      <h3 class="text-dark font-weight-bold">Beschrijving</h3>
+      <br>
+        {{ form_row(form.description, {'attr': {'class': 'form-control', 'rows': '3', 'placeholder': 'Type hier je beschrijving in...'} }) }}
+      <br><br>
+      <a href="{{ path('event_index') }}" class="btn btn-primary">Terug naar events</a>
+        {{ form_row(form.save, {'attr': {'class': 'btn btn-primary'} }) }}
+  </div>
+  </div>
+</div>

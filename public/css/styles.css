@@ -20,7 +20,7 @@ span img {
 }
 
 .text-purple{
-    color: #3A0F49;
+    color: #3A0F49 !important;
 }
 
 .event-container {
@@ -90,6 +90,7 @@ span img {
     width: 80%;
     height: 60%;
     color: #3A0F49;
+    background-color: #B0DEF3;
 }
 
 .event-map{
@@ -116,6 +117,7 @@ span img {
     border-radius: 0 0 10px 10px;
     width: 80%;
     height: 8%;
+    background-color: white;
 }
 
 .event-discover-img {
@@ -132,9 +134,13 @@ span img {
     border-radius: 10px;
 }
 
+.event-about-img .user-banner {
+    height: 30vh !important;
+}
+
 .event-map-icon{
     border-radius: 100%;
-    background-image: linear-gradient(rgba(58, 15, 73), rgba(229, 65, 96));
+    background-image: linear-gradient(rgb(58, 15, 73), rgb(229, 65, 96));
     padding: 3%;
     position: absolute;
     top: -7%;
@@ -156,7 +162,7 @@ span img {
 
 #collapse_menu {
     position: absolute;
-    top: 7.5vh;
+    top: 7.68vh;
     left: 0;
     right: 0;
     z-index: 9999;
@@ -166,4 +172,100 @@ span img {
 .btn, .btn-primary {
     background-image: linear-gradient(rgba(58, 15, 73, 0.8), rgba(229, 65, 96, 0.8));
     border: none !important;
+}
+
+/** Header **/
+.navbar-toggler {
+    border: none;
+    background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+    background-color: #fff;
+    transform: rotate(0deg) translate(0px, 0px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar + .icon-bar {
+    margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+    width: 16px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:hover > .icon-bar:nth-child(2){
+    width: 22px;
+    transition: ease all .2s;
+}
+.navbar-toggler:active > .icon-bar:nth-child(2){
+    width: 22px;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 4px);
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+    opacity: 0;
+    transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, -4px);
+    transition: ease all .2s;
+}
+
+.usersstyles {
+    font-size: 18px;
+}
+
+label {
+    color: #000;
+}
+
+.user_events {
+    background: url("../images/4k-wallpaper-clouds-cloudy-1668246.jpg");
+    border-radius: 10px;
+}
+
+.profile_img {
+    border-radius: 200px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: -10px;
+    z-index: 99;
+    position: relative;
+}
+
+.user-description {
+    position: absolute;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    width: 80%;
+    height: 80%;
+    color: #3A0F49;
+}
+
+.bottom-nav {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
 }

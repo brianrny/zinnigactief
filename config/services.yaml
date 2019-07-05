@@ -31,3 +31,6 @@ services:
     arguments: ['@security.token_storage', '@doctrine']
     tags:
     - { name: kernel.event_listener, event: kernel.controller, method: onCoreController }
+
+  imap_login:
+    class: App\Service\ImapService
